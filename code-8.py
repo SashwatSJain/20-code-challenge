@@ -4,6 +4,7 @@
 
 
 dval = []
+pss = None
 lst = [1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4,1,2,3,4]
 for i in range(1,21):
     if lst[i-1] not in dval:
@@ -11,8 +12,13 @@ for i in range(1,21):
 
 if len(dval) == 4:
     for j in range(1,19):
-        if lst[j] == lst[j-1]:
-            print("pass")
+        if lst[j] != lst[j-1]:
+            pss = True
+        else:
+            pss = False
+
+if pss:
+    print("pass")
 
 else:
     print("fail")
