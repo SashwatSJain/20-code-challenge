@@ -1,3 +1,3 @@
 for i in range(50):
-    a = open(f"{i+1}th file.py", "w")
+    a = open(f"code-{i+1}.py", "w")
     a.close()
