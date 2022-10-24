@@ -1,3 +1,3 @@
-for i in range(50):
+for i in range(20):
     a = open(f"code-{i+1}.py", "w")
     a.close()
